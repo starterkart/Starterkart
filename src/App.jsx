@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { 
   ShoppingBag, MessageCircle, Check, ArrowRight, Zap, Smartphone, 
   Truck, CreditCard, Instagram, ChevronRight, Info, Layout, 
@@ -311,4 +311,4 @@ const HomePage = ({ setPage }) => {
             <img src="https://ouch-cdn2.icons8.com/6Xy-J8Q0-1-5_3s2-6-1-8y3-4-1_3/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzAv/ZWY5ZDI4MDctM2Qz/OC00ZGYxLThhYmIt/NDIxMDc0YmE0YzU2/LnBuZw.png" className="w-full h-full object-cover object-top bg-blue-50" />
           </div>
           <h3 className="text-3xl font-black">Dawar</h3>
-          <p className="text-blue-600 font-bold text-xs uppercase tracking-widest mt-2">Founder & Lead</p>
+          <p className="text-blue-600 font-bold text-xs uppercase tracking-widest mt-2">Founder & 
