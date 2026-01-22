@@ -1,59 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Starterkart — Shopify Stores for Boutiques</title>
-<link rel="stylesheet" href="./css/style.css" />
-</head>
-<body>
-
-<header>
-  <h1>Starterkart</h1>
-  <p>Shopify Stores for Clothing Brands & Boutiques</p>
-</header>
-
-<section id="portfolio">
-  <h2>Demo Stores</h2>
-  <div id="gallery" class="grid"></div>
-</section>
-
-<section id="pricing">
-  <h2>Pricing</h2>
-  <p>Base Package: ₹3499</p>
-  <label>
-    <input type="checkbox" id="themeAddon" /> Theme Customization + ₹1500
-  </label>
-  <label>
-    <input type="checkbox" id="catalogAddon" /> Catalog Setup + ₹1000
-  </label>
-  <p id="totalPrice">Total: ₹3499</p>
-  <button id="whatsappBtn">WhatsApp Quote</button>
-</section>
-
-<footer>
-  Starterkart © 2026 — Shopify Store Developer
-</footer>
-
-<script src="./js/gallery.js"></script>
-<script>
-  function updatePrice() {
-    let total = 3499;
-    if (document.getElementById("themeAddon").checked) total += 1500;
-    if (document.getElementById("catalogAddon").checked) total += 1000;
-    document.getElementById("totalPrice").innerText = "Total: ₹" + total;
-    document.getElementById("whatsappBtn").onclick = () => {
-      const msg = encodeURIComponent(
-        `Hi! I'm interested. My total is ₹${total}. Can you confirm?`
-      );
-      window.open(`https://wa.me/9818082449?text=${msg}`);
-    };
-  }
-
-  document.getElementById("themeAddon").onchange = updatePrice;
-  document.getElementById("catalogAddon").onchange = updatePrice;
-  updatePrice();
-</script>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starterkart | Launch Your Store</title>
+    <!-- Pre-loading the Inter font for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
+
+
